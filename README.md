@@ -29,8 +29,17 @@
   <hr>
   
   ## Lets go through each folder 
-  Lets begin with server.js since that makes more sense because thats what were going to use to commincate with all the files and browser. Line 2-4 these are depedency think of it like a child that depends on its parents, application the depend on other code. Line 5 is pretty much saying this will be needed in the folder called config/passport. Line 8 and 9 is our env.port that can be heroku server or local server such as "8080,3000" and other server port. It is important to have the port in CAPITAL because we are letting other programmer not the change this. In line 9 we re saying that this will be seen in ./model folder. 
+  Lets begin with server.js since that makes more sense because thats what were going to use to commincate with all the files and browser. Line 2-4 these are depedency think of it like a child that depends on its parents, application the depend on other code. Line 5 is pretty much saying this will be needed in the folder called config/passport. Line 8 and 9 is our env.port that can be heroku server or local server such as "8080,3000" and other server port. It is important to have the port in CAPITAL because we are letting other programmer not the change this. In line 9 we re saying that this will be seen in ./model folder. Line 12-19 we are seeting up express routes for configuring middleware that way it can access the public folder and authenticated.js. Then for line 22-29 we are setting express as well since we defined it to be app then access html-route and api-route. In here we are using sequelize and listening if a user is logging a message it can be passed to the db. 
 
+  ## Models
+  Lets start with user.js, in here we are requires "bcrypt for password hasing. This way the database will be secure and people will not know your password. The password will be stored in the database. Then index.js this basically connects to database and import user input data. 
+
+ ## Routes
+ Lets start with html-routes.js in here we have routes for the user to either login or sign up if they don't have a login then can create one and brings them to the next page. If they are a member they can login then goes to the main page. This will eventually go to the public folder and go through all the html side "front end".
+ In api-routes.js this contain routes or sigining in and logging out then in line 36 getting users data displayed on the client side. 
+
+## Public
+ In this folder this is where all the HTML lives and styling. Also some JS such as login.js, member.js and signup.js where we can get users email and password input. 
   ## Installation 
   Mysql2, Passport, passport-local, sequelize, bcryptjs, express, express-session
   <hr>
