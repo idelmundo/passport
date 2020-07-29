@@ -29,7 +29,7 @@
   <hr>
   
   ## Lets go through each folder 
-  Lets begin with server.js since that makes more sense because thats what were going to use to commincate with all the files and browser. 
+  Lets begin with server.js since that makes more sense because thats what were going to use to commincate with all the files and browser. Line 2-4 these are depedency think of it like a child that depends on its parents, application the depend on other code. Line 5 is pretty much saying this will be needed in the folder called config/passport. Line 8 and 9 is our env.port that can be heroku server or local server such as "8080,3000" and other server port. It is important to have the port in CAPITAL because we are letting other programmer not the change this. In line 9 we re saying that this will be seen in ./model folder. 
 
   ## Installation 
   Mysql2, Passport, passport-local, sequelize, bcryptjs, express, express-session
