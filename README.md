@@ -1,9 +1,4 @@
 
-   
-  <p>
-  <img src="https://media.giphy.com/media/PkjuJb3knlRiuhx9RO/giphy.gif"width="450"/></p>
-  <hr>
-  
   ## Table Of Contents
   |   |       | |
 | ------------- |:-------------:| -----:|
